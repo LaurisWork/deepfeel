@@ -29,18 +29,11 @@ const questions: VotingQuestion[] = [
   },
 ];
 
-const accentColors = [
-  "bg-accent-pink",
-  "bg-accent-teal",
-  "bg-accent-blue",
-  "bg-accent-orange",
-  "bg-accent-yellow",
-];
-
 const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
   const [votes, setVotes] = useState<number[]>(q.initialVotes);
   const [selected, setSelected] = useState<number | null>(null);
   const [hasVoted, setHasVoted] = useState(false);
+  const inverted = index % 2 === 0;
 
   const totalVotes = votes.reduce((a, b) => a + b, 0);
 
@@ -53,52 +46,61 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
     setHasVoted(true);
   };
 
+  const containerClass = inverted
+    ? "bg-foreground text-background"
+    : "bg-background text-foreground";
+
+  const pillClass = inverted
+    ? "border-background text-background hover:bg-background hover:text-foreground"
+    : "border-foreground text-foreground hover:bg-foreground hover:text-background";
+
+  const barBgClass = inverted ? "bg-background/20" : "bg-foreground/10";
+  const barFillClass = inverted ? "bg-accent-pink" : "bg-accent-pink";
+  const barDefaultClass = inverted ? "bg-background/30" : "bg-foreground/15";
+  const mutedTextClass = inverted ? "text-background/60" : "text-muted-foreground";
+
   return (
-    <div className="border border-foreground p-6 md:p-8">
+    <div className={`border border-foreground p-6 md:p-8 ${containerClass}`}>
       <h3 className="font-display text-2xl md:text-3xl mb-8">
         „{q.question}"
       </h3>
 
       {!hasVoted ? (
-        /* VOTING MODE — large clickable pills */
         <div className="flex flex-wrap gap-3">
           {q.options.map((option, i) => (
             <button
               key={option}
               onClick={() => handleVote(i)}
-              className="border border-foreground rounded-full px-6 py-3 font-display text-lg 
-                hover:bg-foreground hover:text-background transition-all duration-200 cursor-pointer"
+              className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
             >
               {option}
             </button>
           ))}
         </div>
       ) : (
-        /* RESULTS MODE — animated bars */
         <div className="space-y-4">
           {q.options.map((option, i) => {
             const pct = totalVotes > 0 ? (votes[i] / totalVotes) * 100 : 0;
-            const colorClass = accentColors[(index + i) % accentColors.length];
             return (
               <div key={option}>
                 <div className="flex items-baseline justify-between mb-1">
                   <span className={`font-display text-lg ${selected === i ? "underline" : ""}`}>
                     {option}
                   </span>
-                  <span className="font-body text-muted-foreground">
+                  <span className={`font-body ${mutedTextClass}`}>
                     {Math.round(pct)}%
                   </span>
                 </div>
-                <div className="w-full h-10 bg-muted overflow-hidden border border-foreground/20">
+                <div className={`w-full h-10 ${barBgClass} overflow-hidden`} style={{ borderRadius: "10px" }}>
                   <div
-                    className={`h-full ${selected === i ? colorClass : "bg-foreground/15"} transition-all duration-1000 ease-out`}
-                    style={{ width: `${pct}%` }}
+                    className={`h-full ${selected === i ? barFillClass : barDefaultClass} transition-all duration-1000 ease-out`}
+                    style={{ width: `${pct}%`, borderRadius: "10px" }}
                   />
                 </div>
               </div>
             );
           })}
-          <p className="text-muted-foreground font-body pt-2">
+          <p className={`font-body pt-2 ${mutedTextClass}`}>
             {totalVotes} Stimmen · Danke für deine Teilnahme!
           </p>
         </div>
