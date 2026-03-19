@@ -100,10 +100,17 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
               </div>
             );
           })}
-          <p className={`font-body pt-2 ${mutedTextClass}`}>
-            {totalVotes} Stimmen · Danke für deine Teilnahme!
-          </p>
-        </div>
+          <div className="flex items-center justify-between pt-2">
+            <p className={`font-body ${mutedTextClass}`}>
+              {totalVotes} Stimmen · Danke für deine Teilnahme!
+            </p>
+            <button
+              onClick={() => { setHasVoted(false); setSelected(null); }}
+              className={`border rounded-full px-4 py-1.5 font-display text-sm transition-all duration-200 cursor-pointer ${pillClass}`}
+            >
+              Erneut abstimmen
+            </button>
+          </div>
       )}
     </div>
   );
