@@ -17,7 +17,7 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* HERO - Split Layout */}
+      {/* HERO */}
       <header className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
         <div className="p-8 md:p-16 flex flex-col justify-end bg-accent-blue min-h-[400px] md:min-h-[550px]">
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.92] mb-8">
@@ -36,18 +36,13 @@ const Index = () => {
         </div>
       </header>
 
-      {/* TAGLINE BAR */}
+      {/* TAGLINE */}
       <div className="border-b border-foreground px-4 md:px-8 py-4 flex items-center gap-3 font-body text-base">
-        <span>Gefühle</span>
-        <span>·</span>
-        <span>Technologie</span>
-        <span>·</span>
-        <span>Verbindung</span>
-        <span>·</span>
-        <span>Jugend</span>
+        <span>Gefühle</span><span>·</span><span>Technologie</span><span>·</span>
+        <span>Verbindung</span><span>·</span><span>Jugend</span>
       </div>
 
-      {/* INTRO + LOGO GRID */}
+      {/* INTRO */}
       <section className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
         <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[250px]">
           <p className="font-body text-lg md:text-xl leading-relaxed max-w-lg">
@@ -66,27 +61,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ===== FAKTEN SECTION — each fact visually different ===== */}
+      {/* ===== FAKTEN ===== */}
       <section id="fakten" className="border-b border-foreground">
-        {/* Fact 1 — full-width large statement */}
+        {/* Fact 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
-          <div className="grid-panel flex flex-col justify-center min-h-[300px] md:min-h-[350px]">
+          <div className="grid-panel flex flex-col justify-center min-h-[300px]">
             <p className="font-display text-5xl md:text-7xl leading-[0.92] mb-4">
               Jede 6. Person fühlt sich einsam.
             </p>
           </div>
-          <div className="grid-panel flex items-center grid-panel--accent-pink min-h-[300px]">
-            <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground">
+          <div className="grid-panel flex items-center min-h-[300px]">
+            <p className="font-body text-xl md:text-2xl leading-relaxed">
               Und junge Menschen sind besonders betroffen. Einsamkeit betrifft nicht nur ältere 
               Generationen – sie ist mitten unter uns.
             </p>
           </div>
         </div>
 
-        {/* Fact 2 — number highlight with narrow text column */}
+        {/* Fact 2 — number with accent highlight */}
         <div className="grid grid-cols-1 md:grid-cols-3 border-b border-foreground">
-          <div className="grid-panel grid-panel--accent-yellow flex items-center justify-center min-h-[280px]">
-            <p className="font-display text-7xl md:text-9xl text-foreground">18–29</p>
+          <div className="grid-panel flex items-center justify-center min-h-[280px]">
+            <p className="font-display text-7xl md:text-9xl">
+              <span className="text-accent-pink">18</span>–<span className="text-accent-pink">29</span>
+            </p>
           </div>
           <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[280px]">
             <p className="font-display text-3xl md:text-4xl leading-snug mb-4">
@@ -99,10 +96,10 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Fact 3 — asymmetric layout, teal accent */}
+        {/* Fact 3 */}
         <div className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
-          <div className="grid-panel md:col-span-1 grid-panel--accent-teal flex items-center justify-center min-h-[250px]">
-            <p className="font-display text-6xl md:text-7xl text-foreground">1:4</p>
+          <div className="grid-panel md:col-span-1 flex items-center justify-center min-h-[250px] border-b md:border-b-0 border-foreground">
+            <p className="font-display text-6xl md:text-7xl text-accent-teal">1:4</p>
           </div>
           <div className="grid-panel md:col-span-3 flex flex-col justify-center min-h-[250px]">
             <p className="font-display text-3xl md:text-5xl leading-[0.95] mb-4">
@@ -115,11 +112,14 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Fact 4 — dark text on orange, quote-like */}
+        {/* Fact 4 — subtle orange underline */}
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
-          <div className="grid-panel grid-panel--accent-orange flex flex-col justify-center min-h-[300px]">
-            <p className="font-display text-4xl md:text-5xl leading-[0.95] text-foreground mb-6">
-              Einsamkeit ist nicht nur ein Gefühl – sie macht krank.
+          <div className="grid-panel flex flex-col justify-center min-h-[300px]">
+            <p className="font-display text-4xl md:text-5xl leading-[0.95] mb-6">
+              Einsamkeit ist nicht nur ein Gefühl –{" "}
+              <span className="underline decoration-accent-orange decoration-4 underline-offset-4">
+                sie macht krank.
+              </span>
             </p>
           </div>
           <div className="grid-panel flex items-center min-h-[300px]">
@@ -130,12 +130,12 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Fact 5 — full-width statement, blue background */}
-        <div className="grid-panel grid-panel--accent-blue min-h-[300px] flex flex-col justify-center">
-          <p className="font-display text-4xl md:text-6xl lg:text-7xl leading-[0.92] text-foreground max-w-4xl mb-6">
+        {/* Fact 5 — full width, light accent background */}
+        <div className="grid-panel min-h-[280px] flex flex-col justify-center bg-accent-yellow/10">
+          <p className="font-display text-4xl md:text-6xl lg:text-7xl leading-[0.92] max-w-4xl mb-6">
             Einsamkeit beeinflusst auch unsere Gesellschaft.
           </p>
-          <p className="font-body text-lg md:text-xl leading-relaxed text-foreground max-w-2xl">
+          <p className="font-body text-lg md:text-xl leading-relaxed max-w-2xl">
             Sie kann Vertrauen schwächen und sich negativ auf Demokratie auswirken. 
             Wer sich nicht zugehörig fühlt, zieht sich zurück – auch politisch.
           </p>
@@ -155,29 +155,32 @@ const Index = () => {
         </div>
       </section>
 
-      {/* QUESTIONS SECTION */}
+      {/* QUESTIONS */}
       <section id="fragen" className="border-t border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Unsere Fragen</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
-          <div className="grid-panel flex items-center justify-center grid-panel--accent-pink min-h-[280px]">
-            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4 text-foreground">
-              „Fühlt sich Online-Kontakt genauso an wie echte Begegnung?"
+          <div className="grid-panel flex items-center justify-center min-h-[280px]">
+            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
+              „Fühlt sich Online-Kontakt genauso an wie{" "}
+              <span className="text-accent-pink">echte Begegnung</span>?"
+            </p>
+          </div>
+          <div className="grid-panel flex items-center justify-center min-h-[280px] border-x border-foreground">
+            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
+              „Können KI oder digitale Räume{" "}
+              <span className="text-accent-teal">Nähe</span> ersetzen?"
             </p>
           </div>
           <div className="grid-panel flex items-center justify-center min-h-[280px]">
             <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
-              „Können KI oder digitale Räume Nähe ersetzen?"
-            </p>
-          </div>
-          <div className="grid-panel flex items-center justify-center grid-panel--accent-blue min-h-[280px]">
-            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4 text-foreground">
-              „Warum fühlen sich manche Menschen trotz vieler Kontakte einsam?"
+              „Warum fühlen sich manche Menschen trotz vieler Kontakte{" "}
+              <span className="text-accent-blue">einsam</span>?"
             </p>
           </div>
         </div>
-        {/* Question Pills */}
+        {/* Pills */}
         <div className="border-t border-foreground px-4 md:px-8 py-12 md:py-16">
           <div className="flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
             {[
@@ -196,18 +199,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* WORKSHOP PANELS */}
+      {/* WORKSHOP */}
       <section id="workshop" className="border-t border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Aus dem Workshop</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
-            <img
-              src={workshopHero}
-              alt="Workshop-Szene"
-              className="absolute inset-0 w-full h-full object-cover object-top"
-            />
+            <img src={workshopHero} alt="Workshop-Szene" className="absolute inset-0 w-full h-full object-cover object-top" />
           </div>
           <div className="grid-panel flex items-center">
             <p className="font-body text-base md:text-lg leading-relaxed">
@@ -216,26 +215,23 @@ const Index = () => {
               Erfahrungen und diskutierten in Kleingruppen.
             </p>
           </div>
-          <div className="grid-panel grid-panel--accent-teal flex items-center">
-            <p className="font-display text-2xl md:text-3xl leading-snug text-foreground">
-              „Ich chatte mit 100 Leuten, aber fühle mich trotzdem allein."
+          <div className="grid-panel flex items-center">
+            <p className="font-display text-2xl md:text-3xl leading-snug">
+              „Ich chatte mit 100 Leuten, aber fühle mich trotzdem{" "}
+              <span className="text-accent-teal">allein</span>."
             </p>
           </div>
         </div>
       </section>
 
-      {/* VIDEO — central, prominent */}
+      {/* VIDEO */}
       <section id="video" className="border-t border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
         </div>
         <div className="border-t border-foreground">
           <div className="max-w-5xl mx-auto px-4 md:px-0 py-8 md:py-12">
-            <video
-              controls
-              className="w-full border border-foreground"
-              poster={workshopHero}
-            >
+            <video controls className="w-full border border-foreground" poster={workshopHero}>
               <source src="/videos/freundschaft.mp4" type="video/mp4" />
               Dein Browser unterstützt kein Video.
             </video>
@@ -246,7 +242,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* SECOND QUOTE BREAKOUT */}
+      {/* QUOTE BREAKOUT 2 */}
       <section className="py-12 md:py-20 px-4 md:px-8 border-t border-foreground">
         <div className="breakout-right max-w-4xl ml-auto mr-8">
           <blockquote className="font-display text-3xl md:text-5xl lg:text-6xl leading-[0.95] text-right">
@@ -258,35 +254,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Quote + Fact side by side */}
-      <section className="grid grid-cols-1 md:grid-cols-2 border-t border-foreground">
-        <div className="grid-panel grid-panel--accent-pink flex items-center justify-center min-h-[350px]">
-          <blockquote className="font-display text-3xl md:text-4xl text-center leading-snug max-w-md text-foreground">
-            „Gefühle sind nicht digital – aber der Raum, in dem wir sie teilen, ist es."
-          </blockquote>
-        </div>
-        <div className="grid-panel grid-panel--accent-yellow flex flex-col justify-center min-h-[350px]">
-          <p className="font-display text-4xl md:text-5xl leading-[0.95] text-foreground mb-4">
-            Zuhören ist der erste Schritt.
-          </p>
-          <p className="font-body text-lg text-foreground leading-relaxed">
-            Einsamkeit beginnt oft dort, wo das Gespräch aufhört. 
-            Im Workshop haben wir gelernt, wieder hinzuhören.
-          </p>
-        </div>
-      </section>
-
-      {/* VOTING PANEL — multiple questions */}
+      {/* VOTING */}
       <section id="voting" className="border-t border-foreground">
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="grid-panel md:col-span-1 grid-panel--accent-yellow flex items-center justify-center min-h-[300px]">
-            <p className="font-display text-4xl md:text-5xl leading-snug text-center text-foreground">
-              Deine<br />Stimme<br />zählt.
-            </p>
-          </div>
-          <div className="grid-panel md:col-span-2">
-            <VotingPanel />
-          </div>
+        <div className="grid-panel pb-4">
+          <h2 className="font-display text-4xl md:text-5xl">
+            Deine Stimme zählt
+          </h2>
+          <p className="font-body text-lg text-muted-foreground mt-2">
+            Wähle eine Antwort – und sieh, wie andere abgestimmt haben.
+          </p>
+        </div>
+        <div className="border-t border-foreground">
+          <VotingPanel />
         </div>
       </section>
 
@@ -295,43 +274,43 @@ const Index = () => {
         <div className="grid-panel flex items-center justify-center min-h-[200px]">
           <p className="font-display text-2xl md:text-3xl text-center">Session 1<br /><span className="font-body text-base text-muted-foreground">Gefühle erkennen</span></p>
         </div>
-        <div className="grid-panel flex items-center justify-center grid-panel--accent-blue min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center text-foreground">Session 2<br /><span className="font-body text-base text-foreground/70">Digitale Räume</span></p>
+        <div className="grid-panel flex items-center justify-center min-h-[200px]">
+          <p className="font-display text-2xl md:text-3xl text-center">Session 2<br /><span className="font-body text-base text-muted-foreground">Digitale Räume</span></p>
         </div>
         <div className="grid-panel flex items-center justify-center min-h-[200px]">
           <p className="font-display text-2xl md:text-3xl text-center">Session 3<br /><span className="font-body text-base text-muted-foreground">KI & Empathie</span></p>
         </div>
-        <div className="grid-panel flex items-center justify-center grid-panel--accent-teal min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center text-foreground">Session 4<br /><span className="font-body text-base text-foreground/70">Gemeinsam fühlen</span></p>
+        <div className="grid-panel flex items-center justify-center min-h-[200px]">
+          <p className="font-display text-2xl md:text-3xl text-center">Session 4<br /><span className="font-body text-base text-muted-foreground">Gemeinsam fühlen</span></p>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-foreground px-4 md:px-8 py-12 md:py-16">
+      {/* FOOTER — inverted */}
+      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4" />
-            <p className="font-body text-base text-muted-foreground">
+            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4 invert" />
+            <p className="font-body text-base opacity-70">
               Ein Workshop-Projekt über Gefühle,<br />Technologie und menschliche Verbindung.
             </p>
           </div>
           <div>
             <p className="font-display text-base mb-3">Projekt</p>
-            <p className="font-body text-base text-muted-foreground leading-relaxed">
+            <p className="font-body text-base opacity-70 leading-relaxed">
               Deep Feel ist ein einmaliges Workshop-Projekt, das junge Menschen einlädt,
               über die Auswirkungen digitaler Technologien auf ihre Gefühle nachzudenken.
             </p>
           </div>
           <div>
             <p className="font-display text-base mb-3">Kontakt</p>
-            <p className="font-body text-base text-muted-foreground leading-relaxed">
+            <p className="font-body text-base opacity-70 leading-relaxed">
               Bei Fragen zum Projekt oder den Ergebnissen freuen wir uns über eine Nachricht.
             </p>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-foreground flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-body text-muted-foreground">© 2026 Deep Feel. Alle Rechte vorbehalten.</p>
-          <p className="font-body text-muted-foreground">Eine digitale Ausstellung</p>
+        <div className="mt-12 pt-6 border-t border-background/20 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-body opacity-50">© 2026 Deep Feel. Alle Rechte vorbehalten.</p>
+          <p className="font-body opacity-50">Eine digitale Ausstellung</p>
         </div>
       </footer>
     </div>
