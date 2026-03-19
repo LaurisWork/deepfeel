@@ -29,74 +29,79 @@ const questions: VotingQuestion[] = [
   },
 ];
 
-const SingleVote = ({ q }: { q: VotingQuestion }) => {
+const accentColors = [
+  "bg-accent-pink",
+  "bg-accent-teal",
+  "bg-accent-blue",
+  "bg-accent-orange",
+  "bg-accent-yellow",
+];
+
+const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
   const [votes, setVotes] = useState<number[]>(q.initialVotes);
   const [selected, setSelected] = useState<number | null>(null);
   const [hasVoted, setHasVoted] = useState(false);
 
   const totalVotes = votes.reduce((a, b) => a + b, 0);
-  const maxVotes = Math.max(...votes);
 
-  const handleVote = (index: number) => {
+  const handleVote = (i: number) => {
     if (hasVoted) return;
-    setSelected(index);
+    setSelected(i);
     const newVotes = [...votes];
-    newVotes[index] += 1;
+    newVotes[i] += 1;
     setVotes(newVotes);
     setHasVoted(true);
   };
 
   return (
-    <div>
-      <h3 className="font-display text-2xl md:text-3xl mb-6">
+    <div className="border border-foreground p-6 md:p-8">
+      <h3 className="font-display text-2xl md:text-3xl mb-8">
         „{q.question}"
       </h3>
-      <div className="space-y-3">
-        {q.options.map((option, i) => {
-          const pct = totalVotes > 0 ? (votes[i] / totalVotes) * 100 : 0;
-          return (
+
+      {!hasVoted ? (
+        /* VOTING MODE — large clickable pills */
+        <div className="flex flex-wrap gap-3">
+          {q.options.map((option, i) => (
             <button
               key={option}
               onClick={() => handleVote(i)}
-              className={`w-full text-left transition-all duration-500 ${
-                hasVoted ? "cursor-default" : "cursor-pointer"
-              }`}
+              className="border border-foreground rounded-full px-6 py-3 font-display text-lg 
+                hover:bg-foreground hover:text-background transition-all duration-200 cursor-pointer"
             >
-              <div className="flex items-center justify-between mb-1">
-                <span className={`font-body ${selected === i ? "font-semibold" : ""}`}>
-                  {option}
-                </span>
-                {hasVoted && (
+              {option}
+            </button>
+          ))}
+        </div>
+      ) : (
+        /* RESULTS MODE — animated bars */
+        <div className="space-y-4">
+          {q.options.map((option, i) => {
+            const pct = totalVotes > 0 ? (votes[i] / totalVotes) * 100 : 0;
+            const colorClass = accentColors[(index + i) % accentColors.length];
+            return (
+              <div key={option}>
+                <div className="flex items-baseline justify-between mb-1">
+                  <span className={`font-display text-lg ${selected === i ? "underline" : ""}`}>
+                    {option}
+                  </span>
                   <span className="font-body text-muted-foreground">
                     {Math.round(pct)}%
                   </span>
-                )}
+                </div>
+                <div className="w-full h-10 bg-muted overflow-hidden border border-foreground/20">
+                  <div
+                    className={`h-full ${selected === i ? colorClass : "bg-foreground/15"} transition-all duration-1000 ease-out`}
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
               </div>
-              <div className="w-full h-8 bg-muted rounded-sm overflow-hidden border border-foreground/20">
-                <div
-                  className={`h-full rounded-sm transition-all duration-700 ease-out ${
-                    selected === i
-                      ? "bg-accent-pink"
-                      : votes[i] === maxVotes && hasVoted
-                      ? "bg-accent-teal"
-                      : "bg-foreground/20"
-                  }`}
-                  style={{ width: hasVoted ? `${pct}%` : "0%" }}
-                />
-              </div>
-            </button>
-          );
-        })}
-      </div>
-      {hasVoted && (
-        <p className="mt-4 text-muted-foreground font-body">
-          {totalVotes} Stimmen insgesamt
-        </p>
-      )}
-      {!hasVoted && (
-        <p className="mt-4 text-muted-foreground font-body">
-          Wähle eine Antwort aus
-        </p>
+            );
+          })}
+          <p className="text-muted-foreground font-body pt-2">
+            {totalVotes} Stimmen · Danke für deine Teilnahme!
+          </p>
+        </div>
       )}
     </div>
   );
@@ -104,9 +109,9 @@ const SingleVote = ({ q }: { q: VotingQuestion }) => {
 
 const VotingPanel = () => {
   return (
-    <div className="space-y-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
       {questions.map((q, i) => (
-        <SingleVote key={i} q={q} />
+        <SingleVote key={i} q={q} index={i} />
       ))}
     </div>
   );
