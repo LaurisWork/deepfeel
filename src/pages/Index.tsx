@@ -37,7 +37,7 @@ const Index = () => {
       </header>
 
       {/* TAGLINE */}
-      <div className="border-b border-foreground px-4 md:px-8 py-4 flex items-center gap-3 font-body text-base">
+      <div className="border-b border-foreground px-4 md:px-8 py-6 md:py-8 flex items-center justify-between font-display text-3xl md:text-5xl lg:text-6xl tracking-tight">
         <span>Gefühle</span><span>·</span><span>Technologie</span><span>·</span>
         <span>Verbindung</span><span>·</span><span>Jugend</span>
       </div>
