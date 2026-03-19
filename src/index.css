@@ -70,11 +70,11 @@
 
 @layer components {
   .grid-panel {
-    @apply border border-foreground/15 p-6 md:p-8 transition-all duration-300;
+    @apply border border-foreground p-6 md:p-8 transition-all duration-300;
   }
 
   .grid-panel:hover {
-    @apply border-foreground/30;
+    @apply border-foreground;
   }
 
   .grid-panel--accent-pink {
