@@ -78,27 +78,22 @@
 
   .grid-panel--accent-pink {
     background-color: hsl(var(--accent-pink));
-    color: white;
   }
 
   .grid-panel--accent-teal {
     background-color: hsl(var(--accent-teal));
-    color: white;
   }
 
   .grid-panel--accent-blue {
     background-color: hsl(var(--accent-blue));
-    color: white;
   }
 
   .grid-panel--accent-orange {
     background-color: hsl(var(--accent-orange));
-    color: white;
   }
 
   .grid-panel--accent-yellow {
     background-color: hsl(var(--accent-yellow));
-    color: hsl(var(--foreground));
   }
 
   .question-pill {
