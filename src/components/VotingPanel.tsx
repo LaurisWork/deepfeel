@@ -111,6 +111,7 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
               Erneut abstimmen
             </button>
           </div>
+        </div>
       )}
     </div>
   );
