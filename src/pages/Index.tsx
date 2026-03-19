@@ -230,12 +230,12 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
         </div>
         <div className="border-t border-foreground">
-          <div className="max-w-5xl mx-auto px-4 md:px-0 py-8 md:py-12">
-            <video controls className="w-full border border-foreground" poster={workshopHero}>
-              <source src="/videos/freundschaft.mp4" type="video/mp4" />
-              Dein Browser unterstützt kein Video.
-            </video>
-            <p className="font-body text-base text-muted-foreground mt-4">
+          <video controls className="w-full block" poster={workshopHero}>
+            <source src="/videos/freundschaft.mp4" type="video/mp4" />
+            Dein Browser unterstützt kein Video.
+          </video>
+          <div className="grid-panel py-4">
+            <p className="font-body text-base text-muted-foreground">
               „Freundschaft" — Ein Film aus dem Workshop Deep Feel
             </p>
           </div>
