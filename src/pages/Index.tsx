@@ -7,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* NAV */}
       <nav className="border-b border-foreground/15 px-4 md:px-8 py-4 flex items-center justify-between">
-        <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-8 md:h-10" />
+        <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-16 md:h-20" />
         <div className="hidden md:flex gap-6 font-body text-sm">
           <a href="#workshop" className="hover:text-primary transition-colors">Workshop</a>
           <a href="#fragen" className="hover:text-primary transition-colors">Fragen</a>
