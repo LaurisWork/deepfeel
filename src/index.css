@@ -1,96 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 192 33% 97%;
+    --foreground: 350 90% 5%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 192 33% 97%;
+    --card-foreground: 350 90% 5%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 192 33% 97%;
+    --popover-foreground: 350 90% 5%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 64% 57%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 174 35% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 192 20% 92%;
+    --muted-foreground: 350 20% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-pink: 340 64% 57%;
+    --accent-teal: 174 35% 55%;
+    --accent-blue: 213 44% 57%;
+    --accent-orange: 22 95% 60%;
+    --accent-yellow: 48 84% 63%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 174 35% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 350 10% 85%;
+    --input: 350 10% 85%;
+    --ring: 340 64% 57%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.25rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 192 33% 97%;
+    --sidebar-foreground: 350 90% 5%;
+    --sidebar-primary: 340 64% 57%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 174 35% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 350 10% 85%;
+    --sidebar-ring: 340 64% 57%;
   }
 }
 
@@ -100,6 +59,63 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .grid-panel {
+    @apply border border-foreground/15 p-6 md:p-8 transition-all duration-300;
+  }
+
+  .grid-panel:hover {
+    @apply border-foreground/30;
+  }
+
+  .grid-panel--accent-pink {
+    background-color: hsl(var(--accent-pink));
+    color: white;
+  }
+
+  .grid-panel--accent-teal {
+    background-color: hsl(var(--accent-teal));
+    color: white;
+  }
+
+  .grid-panel--accent-blue {
+    background-color: hsl(var(--accent-blue));
+    color: white;
+  }
+
+  .grid-panel--accent-orange {
+    background-color: hsl(var(--accent-orange));
+    color: white;
+  }
+
+  .grid-panel--accent-yellow {
+    background-color: hsl(var(--accent-yellow));
+    color: hsl(var(--foreground));
+  }
+
+  .question-pill {
+    @apply inline-block border border-foreground/40 rounded-full px-5 py-2 font-display text-sm md:text-base transition-colors duration-200;
+  }
+
+  .question-pill:hover {
+    @apply bg-foreground text-background;
+  }
+
+  .breakout {
+    @apply relative z-10;
+    transform: rotate(-1.5deg);
+  }
+
+  .breakout-right {
+    @apply relative z-10;
+    transform: translateX(1rem) rotate(1deg);
   }
 }
