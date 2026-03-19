@@ -232,7 +232,7 @@ const Index = () => {
       <footer className="border-t border-foreground/15 px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src={deepFeelLogo} alt="Deep Feel" className="h-12 mb-4" />
+            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4" />
             <p className="font-body text-sm text-muted-foreground">
               Ein Workshop-Projekt über Gefühle,<br />Technologie und menschliche Verbindung.
             </p>
