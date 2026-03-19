@@ -18,13 +18,12 @@ const Index = () => {
 
       {/* HERO - Split Layout */}
       <header className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground/15">
-        <div className="p-8 md:p-16 flex flex-col justify-center">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
+        <div className="p-8 md:p-16 flex flex-col justify-end bg-accent-blue">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
             Was macht KI<br />mit unseren<br />Gefühlen?
           </h1>
-          <p className="font-body text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-            Eine digitale Ausstellung über Nähe, Einsamkeit und emotionale Verbindung
-            im Zeitalter der Technologie. Ergebnisse aus dem Workshop „Deep Feel".
+          <p className="font-body text-sm md:text-base max-w-sm leading-relaxed">
+            Jugendliche wachsen heute mit Social Media, Chatbots und künstlicher Intelligenz auf.
           </p>
         </div>
         <div className="relative overflow-hidden min-h-[300px] md:min-h-[500px] border-l border-foreground/15">
