@@ -7,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* NAV */}
       <nav className="border-b border-foreground/15 px-4 md:px-8 py-4 flex items-center justify-between">
-        <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-8 md:h-10" />
+        <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-16 md:h-20" />
         <div className="hidden md:flex gap-6 font-body text-sm">
           <a href="#workshop" className="hover:text-primary transition-colors">Workshop</a>
           <a href="#fragen" className="hover:text-primary transition-colors">Fragen</a>
@@ -57,7 +57,7 @@ const Index = () => {
           </p>
         </div>
         <div className="grid-panel flex items-center justify-center grid-panel--accent-teal">
-          <img src={deepFeelLogo} alt="Deep Feel" className="w-32 md:w-40 invert brightness-0 invert" />
+          <img src={deepFeelLogo} alt="Deep Feel" className="w-64 md:w-80 invert brightness-0 invert" />
         </div>
         <div className="grid-panel flex items-center justify-center">
           <p className="font-display text-2xl md:text-3xl text-center leading-snug">
@@ -232,7 +232,7 @@ const Index = () => {
       <footer className="border-t border-foreground/15 px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src={deepFeelLogo} alt="Deep Feel" className="h-12 mb-4" />
+            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4" />
             <p className="font-body text-sm text-muted-foreground">
               Ein Workshop-Projekt über Gefühle,<br />Technologie und menschliche Verbindung.
             </p>
