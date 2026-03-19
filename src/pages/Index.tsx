@@ -57,7 +57,7 @@ const Index = () => {
           </p>
         </div>
         <div className="grid-panel flex items-center justify-center grid-panel--accent-teal">
-          <img src={deepFeelLogo} alt="Deep Feel" className="w-32 md:w-40 invert brightness-0 invert" />
+          <img src={deepFeelLogo} alt="Deep Feel" className="w-64 md:w-80 invert brightness-0 invert" />
         </div>
         <div className="grid-panel flex items-center justify-center">
           <p className="font-display text-2xl md:text-3xl text-center leading-snug">
