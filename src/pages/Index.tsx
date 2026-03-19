@@ -42,6 +42,15 @@ const Index = () => {
         <span>Verbindung</span><span>·</span><span>Jugend</span>
       </div>
 
+      {/* MISSION STATEMENT */}
+      <div className="border-b border-foreground px-4 md:px-8 py-10 md:py-14">
+        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
+          Deep Feel möchte Raum schaffen, um über diese Fragen nachzudenken. 
+          Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social 
+          Media, KI und digitale Kommunikation in ihrem Leben spielen.
+        </p>
+      </div>
+
       {/* INTRO */}
       <section className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
         <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[250px]">
