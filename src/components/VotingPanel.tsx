@@ -66,17 +66,26 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
       </h3>
 
       {!hasVoted ? (
-        <div className="flex flex-wrap gap-3">
-          {q.options.map((option, i) => (
-            <button
-              key={option}
-              onClick={() => handleVote(i)}
-              className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
-            >
-              {option}
-            </button>
-          ))}
-        </div>
+        <>
+          <div className="flex flex-wrap gap-3">
+            {q.options.map((option, i) => (
+              <button
+                key={option}
+                onClick={() => handleVote(i)}
+                className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => setHasVoted(true)}
+            className={`mt-6 border rounded-full px-4 py-1.5 font-display text-sm transition-all duration-200 cursor-pointer ${pillClass}`}
+          >
+            Ergebnisse aufdecken
+          </button>
+        </>
+
       ) : (
         <div className="space-y-4">
           {q.options.map((option, i) => {
