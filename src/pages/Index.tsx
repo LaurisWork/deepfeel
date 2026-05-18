@@ -159,7 +159,7 @@ const Index = () => {
             „Einsamkeit ist nicht das Gegenteil von Alleinsein – 
             es ist das Gefühl, nicht gesehen zu werden."
           </blockquote>
-          <p className="font-body text-base text-muted-foreground text-center mt-8">
+          <p className="font-body text-base text-foreground text-center mt-8">
             — Workshop-Teilnehmer*in, 17 Jahre
           </p>
         </div>
@@ -241,7 +241,7 @@ const Index = () => {
           <blockquote className="font-display text-3xl md:text-5xl lg:text-6xl leading-[0.95] text-right">
             „Wir haben gelernt, dass Zuhören manchmal wichtiger ist als Antworten."
           </blockquote>
-          <p className="font-body text-base text-muted-foreground text-right mt-6">
+          <p className="font-body text-base text-foreground text-right mt-6">
             — Workshop-Teilnehmer*in, 15 Jahre
           </p>
         </div>
@@ -253,7 +253,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl">
             Deine Stimme zählt
           </h2>
-          <p className="font-body text-lg text-muted-foreground mt-2">
+          <p className="font-body text-lg text-foreground mt-2">
             Wähle eine Antwort – und sieh, wie andere abgestimmt haben.
           </p>
         </div>
