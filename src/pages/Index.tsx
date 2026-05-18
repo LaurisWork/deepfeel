@@ -270,7 +270,7 @@ const Index = () => {
             So haben bisher andere abgestimmt
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="border border-foreground p-6 bg-background">
+            <div className="border border-foreground p-6 bg-foreground text-background">
               <p className="font-display text-5xl md:text-6xl leading-none">182</p>
               <p className="font-body text-base mt-3">abgegebene Stimmen insgesamt</p>
             </div>
@@ -297,7 +297,7 @@ const Index = () => {
 
 
       {/* FOOTER — inverted */}
-      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 mt-12 md:mt-20 border-t-[12px] border-foreground shadow-[0_-1px_0_0_hsl(var(--foreground))]">
+      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
