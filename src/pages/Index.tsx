@@ -20,7 +20,7 @@ const Index = () => {
       {/* HERO */}
       <header className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
         <div className="p-8 md:p-16 flex flex-col justify-end bg-accent-blue min-h-[400px] md:min-h-[550px]">
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.92] mb-8">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.92] mb-8">
             Was macht KI<br />mit unseren<br />Gefühlen?
           </h1>
           <p className="font-body text-lg md:text-2xl max-w-md leading-relaxed">
