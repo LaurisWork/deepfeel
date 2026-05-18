@@ -60,7 +60,7 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
   const mutedTextClass = inverted ? "text-background/60" : "text-muted-foreground";
 
   return (
-    <div className={`border-2 border-foreground p-6 md:p-8 ${containerClass}`}>
+    <div className={`border border-foreground p-6 md:p-8 ${containerClass}`}>
       <h3 className="font-display text-2xl md:text-3xl mb-8">
         „{q.question}"
       </h3>
