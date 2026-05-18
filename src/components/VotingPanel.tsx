@@ -66,36 +66,16 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
       </h3>
 
       {!hasVoted ? (
-        <>
-          <div className="flex flex-wrap gap-3">
-            {q.options.map((option, i) => (
-              <button
-                key={option}
-                onClick={() => handleVote(i)}
-                className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
-              >
-                {option}
-              </button>
-            ))}
-          </div>
-          <button
-            onClick={() => { setHasVoted(true); setRevealed(true); }}
-            className={`mt-6 border rounded-full px-4 py-1.5 font-display text-sm transition-all duration-200 cursor-pointer ${pillClass}`}
-          >
-            Nur Ergebnisse ansehen
-          </button>
-        </>
-      ) : !revealed ? (
-        <div className="space-y-6">
-          <p className="font-display text-xl">
-            Danke für deine Stimme! Der Zwischenstand bleibt zunächst verborgen, damit andere unbeeinflusst abstimmen können.
-          </p>
-          <button
-            onClick={() => setRevealed(true)}
-            className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
-          >
-            Zwischenstand aufdecken
-          </button>
+        <div className="flex flex-wrap gap-3">
+          {q.options.map((option, i) => (
+            <button
+              key={option}
+              onClick={() => handleVote(i)}
+              className={`border rounded-full px-6 py-3 font-display text-lg transition-all duration-200 cursor-pointer ${pillClass}`}
+            >
+              {option}
+            </button>
+          ))}
         </div>
       ) : (
         <div className="space-y-4">
@@ -125,7 +105,7 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
               {totalVotes} Stimmen · Danke für deine Teilnahme!
             </p>
             <button
-              onClick={() => { setHasVoted(false); setRevealed(false); setSelected(null); }}
+              onClick={() => { setHasVoted(false); setSelected(null); }}
               className={`border rounded-full px-4 py-1.5 font-display text-sm transition-all duration-200 cursor-pointer ${pillClass}`}
             >
               Erneut abstimmen
