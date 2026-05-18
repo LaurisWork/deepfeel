@@ -23,7 +23,7 @@ const Index = () => {
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.92] mb-8">
             Was macht KI<br />mit unseren<br />Gefühlen?
           </h1>
-          <p className="font-body text-base md:text-lg max-w-sm leading-relaxed">
+          <p className="font-body text-lg md:text-2xl max-w-md leading-relaxed">
             Jugendliche wachsen heute mit Social Media, Chatbots und künstlicher Intelligenz auf.
           </p>
         </div>
