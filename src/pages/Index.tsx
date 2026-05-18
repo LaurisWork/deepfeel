@@ -6,19 +6,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* NAV */}
-      <nav className="border-b border-foreground px-4 md:px-8 py-4 flex items-center justify-between">
+      <nav className="border-b-2 border-foreground px-4 md:px-8 py-4 flex items-center justify-between">
         <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-16 md:h-20" />
         <div className="hidden md:flex gap-3 font-display text-lg">
-          <a href="#fakten" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fakten</a>
-          <a href="#workshop" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Workshop</a>
-          <a href="#fragen" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fragen</a>
+          <a href="#fakten" className="border-2 border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fakten</a>
+          <a href="#workshop" className="border-2 border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Workshop</a>
+          <a href="#fragen" className="border-2 border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fragen</a>
           
-          <a href="#voting" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Abstimmung</a>
+          <a href="#voting" className="border-2 border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Abstimmung</a>
         </div>
       </nav>
 
       {/* HERO */}
-      <header className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
+      <header className="grid grid-cols-1 md:grid-cols-2 border-b-2 border-foreground">
         <div className="p-8 md:p-16 flex flex-col justify-end bg-accent-blue min-h-[400px] md:min-h-[550px]">
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.92] mb-8">
             Was macht KI<br />mit unseren<br />Gefühlen?
@@ -27,19 +27,19 @@ const Index = () => {
             Jugendliche wachsen heute mit Social Media, Chatbots und künstlicher Intelligenz auf.
           </p>
         </div>
-        <div className="relative overflow-hidden min-h-[300px] md:min-h-[550px] border-l border-foreground">
+        <div className="relative overflow-hidden min-h-[300px] md:min-h-[550px] border-l-2 border-foreground">
           <ScrollVideo src="/videos/klavier.mp4" />
         </div>
       </header>
 
       {/* TAGLINE */}
-      <div className="border-b border-foreground px-4 md:px-8 py-4 md:py-6 flex items-center justify-between font-display text-xl md:text-2xl lg:text-3xl tracking-tight">
+      <div className="border-b-2 border-foreground px-4 md:px-8 py-4 md:py-6 flex items-center justify-between font-display text-xl md:text-2xl lg:text-3xl tracking-tight">
         <span>Gefühle</span><span>·</span><span>Technologie</span><span>·</span>
         <span>Verbindung</span><span>·</span><span>Jugend</span>
       </div>
 
       {/* MISSION STATEMENT */}
-      <div className="border-b border-foreground px-4 md:px-8 py-10 md:py-14">
+      <div className="border-b-2 border-foreground px-4 md:px-8 py-10 md:py-14">
         <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
           Deep Feel möchte Raum schaffen, um über diese Fragen nachzudenken. 
           Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social 
@@ -48,7 +48,7 @@ const Index = () => {
       </div>
 
       {/* INTRO */}
-      <section className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
+      <section className="grid grid-cols-1 md:grid-cols-4 border-b-2 border-foreground">
         <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[250px]">
           <p className="font-body text-lg md:text-xl leading-relaxed max-w-lg">
             Im Rahmen des Workshops „Deep Feel" haben sich junge Menschen mit der Frage
@@ -67,9 +67,9 @@ const Index = () => {
       </section>
 
       {/* ===== FAKTEN ===== */}
-      <section id="fakten" className="border-b border-foreground">
+      <section id="fakten" className="border-b-2 border-foreground">
         {/* Fact 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-2 border-b-2 border-foreground">
           <div className="grid-panel flex flex-col justify-center min-h-[300px]">
             <p className="font-display text-5xl md:text-7xl leading-[0.92] mb-4">
               Jede 6. Person fühlt sich einsam.
@@ -84,7 +84,7 @@ const Index = () => {
         </div>
 
         {/* Fact 2 — number with accent highlight */}
-        <div className="grid grid-cols-1 md:grid-cols-3 border-b border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-b-2 border-foreground">
           <div className="grid-panel flex items-center justify-center min-h-[280px]">
             <p className="font-display text-7xl md:text-9xl">
               <span className="text-accent-pink">18</span>–<span className="text-accent-pink">29</span>
@@ -102,7 +102,7 @@ const Index = () => {
         </div>
 
         {/* Fact 3 */}
-        <div className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-4 border-b-2 border-foreground">
           <div className="grid-panel md:col-span-1 flex items-center justify-center min-h-[250px] border-b md:border-b-0 border-foreground">
             <p className="font-display text-6xl md:text-7xl text-accent-teal">1:4</p>
           </div>
@@ -118,7 +118,7 @@ const Index = () => {
         </div>
 
         {/* Fact 4 — subtle orange underline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border-b border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-2 border-b-2 border-foreground">
           <div className="grid-panel flex flex-col justify-center min-h-[300px]">
             <p className="font-display text-4xl md:text-5xl leading-[0.95] mb-6">
               Einsamkeit ist nicht nur ein Gefühl –{" "}
@@ -148,7 +148,7 @@ const Index = () => {
       </section>
 
       {/* EXHIBITION VIDEO — Anime */}
-      <section className="border-b border-foreground relative aspect-video bg-foreground">
+      <section className="border-b-2 border-foreground relative aspect-video bg-foreground">
         <ScrollVideo src="/videos/anime.mp4" />
       </section>
 
@@ -166,11 +166,11 @@ const Index = () => {
       </section>
 
       {/* QUESTIONS */}
-      <section id="fragen" className="border-t border-foreground">
+      <section id="fragen" className="border-t-2 border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Unsere Fragen</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t-2 border-foreground">
           <div className="grid-panel flex items-center justify-center min-h-[280px]">
             <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
               „Fühlt sich Online-Kontakt genauso an wie{" "}
@@ -191,7 +191,7 @@ const Index = () => {
           </div>
         </div>
         {/* Pills */}
-        <div className="border-t border-foreground px-4 md:px-8 py-12 md:py-16">
+        <div className="border-t-2 border-foreground px-4 md:px-8 py-12 md:py-16">
           <div className="flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
             {[
               "Wie fühlt sich Einsamkeit an?",
@@ -210,11 +210,11 @@ const Index = () => {
       </section>
 
       {/* WORKSHOP */}
-      <section id="workshop" className="border-t border-foreground">
+      <section id="workshop" className="border-t-2 border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Aus dem Workshop</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t-2 border-foreground">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
             <ScrollVideo src="/videos/rewas-freundschaft.mp4" />
           </div>
@@ -236,7 +236,7 @@ const Index = () => {
 
 
       {/* QUOTE BREAKOUT 2 */}
-      <section className="py-12 md:py-20 px-4 md:px-8 border-t border-foreground">
+      <section className="py-12 md:py-20 px-4 md:px-8 border-t-2 border-foreground">
         <div className="breakout-right max-w-4xl ml-auto mr-8">
           <blockquote className="font-display text-3xl md:text-5xl lg:text-6xl leading-[0.95] text-right">
             „Wir haben gelernt, dass Zuhören manchmal wichtiger ist als Antworten."
@@ -248,7 +248,7 @@ const Index = () => {
       </section>
 
       {/* VOTING */}
-      <section id="voting" className="border-t border-foreground">
+      <section id="voting" className="border-t-2 border-foreground">
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">
             Deine Stimme zählt
@@ -257,32 +257,32 @@ const Index = () => {
             Wähle eine Antwort – und sieh, wie andere abgestimmt haben.
           </p>
         </div>
-        <div className="border-t border-foreground">
+        <div className="border-t-2 border-foreground">
           <VotingPanel />
         </div>
       </section>
 
       {/* STATISTIK */}
-      <section className="border-t border-foreground bg-accent-yellow">
+      <section className="border-t-2 border-foreground bg-accent-yellow">
         <div className="grid-panel border-0">
           <p className="font-body uppercase tracking-widest text-sm mb-2">Zwischenstand</p>
           <h2 className="font-display text-4xl md:text-5xl mb-10">
             So haben bisher andere abgestimmt
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="border border-foreground p-6 bg-foreground text-background">
+            <div className="border-2 border-foreground p-6 bg-foreground text-background">
               <p className="font-display text-5xl md:text-6xl leading-none">182</p>
               <p className="font-body text-base mt-3">abgegebene Stimmen insgesamt</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="border-2 border-foreground p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">37%</p>
               <p className="font-body text-base mt-3">fühlen sich <strong>manchmal</strong> einsam</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="border-2 border-foreground p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">43%</p>
               <p className="font-body text-base mt-3">fühlen sich online <strong>eher nicht</strong> verbunden</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="border-2 border-foreground p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">70%</p>
               <p className="font-body text-base mt-3">glauben, KI kann <strong>keine echte Nähe</strong> erzeugen</p>
             </div>
@@ -297,7 +297,7 @@ const Index = () => {
 
 
       {/* FOOTER — inverted */}
-      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
+      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 border-t-2 border-foreground">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
