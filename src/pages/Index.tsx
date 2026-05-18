@@ -256,7 +256,6 @@ const Index = () => {
             <p className="font-body text-base text-muted-foreground">
               „Freundschaft" — Ein Film aus dem Workshop Deep Feel
             </p>
-          </div>
         </div>
       </section>
 
