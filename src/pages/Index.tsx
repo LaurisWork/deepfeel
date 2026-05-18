@@ -270,7 +270,7 @@ const Index = () => {
             So haben bisher andere abgestimmt
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="border border-foreground p-6 bg-background">
+            <div className="border border-foreground p-6 bg-foreground text-background">
               <p className="font-display text-5xl md:text-6xl leading-none">182</p>
               <p className="font-body text-base mt-3">abgegebene Stimmen insgesamt</p>
             </div>
