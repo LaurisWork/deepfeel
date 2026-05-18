@@ -262,21 +262,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* SESSIONS */}
-      <section className="grid grid-cols-1 md:grid-cols-4 border-t border-foreground">
-        <div className="grid-panel flex items-center justify-center min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center">Session 1<br /><span className="font-body text-base text-muted-foreground">Gefühle erkennen</span></p>
-        </div>
-        <div className="grid-panel flex items-center justify-center min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center">Session 2<br /><span className="font-body text-base text-muted-foreground">Digitale Räume</span></p>
-        </div>
-        <div className="grid-panel flex items-center justify-center min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center">Session 3<br /><span className="font-body text-base text-muted-foreground">KI & Empathie</span></p>
-        </div>
-        <div className="grid-panel flex items-center justify-center min-h-[200px]">
-          <p className="font-display text-2xl md:text-3xl text-center">Session 4<br /><span className="font-body text-base text-muted-foreground">Gemeinsam fühlen</span></p>
-        </div>
-      </section>
 
       {/* FOOTER — inverted */}
       <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16">
