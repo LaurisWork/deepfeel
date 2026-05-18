@@ -211,10 +211,7 @@ const Index = () => {
 
       {/* WORKSHOP */}
       <section id="workshop" className="border-t border-foreground">
-        <div className="grid-panel pb-4">
-          <h2 className="font-display text-4xl md:text-5xl">Aus dem Workshop</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
             <ScrollVideo src="/videos/rewas-freundschaft.mp4" />
           </div>
