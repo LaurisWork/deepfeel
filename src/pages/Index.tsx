@@ -249,11 +249,9 @@ const Index = () => {
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
         </div>
-        <div className="border-t border-foreground">
-          <video controls className="w-full block">
-            <source src="/videos/freundschaft.mp4" type="video/mp4" />
-            Dein Browser unterstützt kein Video.
-          </video>
+        <div className="border-t border-foreground relative aspect-video bg-foreground">
+          <ScrollVideo src="/videos/freundschaft.mp4" objectFit="contain" />
+        </div>
           <div className="grid-panel py-4">
             <p className="font-body text-base text-muted-foreground">
               „Freundschaft" — Ein Film aus dem Workshop Deep Feel
