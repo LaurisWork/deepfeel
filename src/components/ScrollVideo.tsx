@@ -68,7 +68,7 @@ const ScrollVideo = ({ src, className = "", objectFit = "cover" }: ScrollVideoPr
         playsInline
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
-        className={`absolute inset-0 w-full h-full object-${objectFit}`}
+        className={`absolute inset-0 w-full h-full ${objectFit === "contain" ? "object-contain" : "object-cover"}`}
       >
         <source src={src} type="video/mp4" />
       </video>
