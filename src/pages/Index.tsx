@@ -1,6 +1,17 @@
 import deepFeelLogo from "@/assets/deep-feel-logo.png";
-import workshopHero from "@/assets/workshop-hero.jpg";
 import VotingPanel from "@/components/VotingPanel";
+
+const AmbientVideo = ({ src, className = "" }: { src: string; className?: string }) => (
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className={`absolute inset-0 w-full h-full object-cover ${className}`}
+  >
+    <source src={src} type="video/mp4" />
+  </video>
+);
 
 const Index = () => {
   return (
@@ -28,11 +39,7 @@ const Index = () => {
           </p>
         </div>
         <div className="relative overflow-hidden min-h-[300px] md:min-h-[550px] border-l border-foreground">
-          <img
-            src={workshopHero}
-            alt="Workshop-Teilnehmer*innen bei Deep Feel"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <AmbientVideo src="/videos/klavier.mp4" />
         </div>
       </header>
 
@@ -215,7 +222,7 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
-            <img src={workshopHero} alt="Workshop-Szene" className="absolute inset-0 w-full h-full object-cover object-top" />
+            <AmbientVideo src="/videos/rewas-freundschaft.mp4" />
           </div>
           <div className="grid-panel flex items-center">
             <p className="font-body text-base md:text-lg leading-relaxed">
@@ -239,7 +246,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
         </div>
         <div className="border-t border-foreground">
-          <video controls className="w-full block" poster={workshopHero}>
+          <video controls className="w-full block">
             <source src="/videos/freundschaft.mp4" type="video/mp4" />
             Dein Browser unterstützt kein Video.
           </video>
