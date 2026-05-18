@@ -33,7 +33,6 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
   const [votes, setVotes] = useState<number[]>(q.initialVotes);
   const [selected, setSelected] = useState<number | null>(null);
   const [hasVoted, setHasVoted] = useState(false);
-  const [revealed, setRevealed] = useState(false);
   const inverted = false;
 
   const totalVotes = votes.reduce((a, b) => a + b, 0);
