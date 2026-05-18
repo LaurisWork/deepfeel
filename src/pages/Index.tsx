@@ -47,24 +47,6 @@ const Index = () => {
         </p>
       </div>
 
-      {/* INTRO */}
-      <section className="grid grid-cols-1 md:grid-cols-4 border-b border-foreground">
-        <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[250px]">
-          <p className="font-body text-lg md:text-xl leading-relaxed max-w-lg">
-            Im Rahmen des Workshops „Deep Feel" haben sich junge Menschen mit der Frage
-            auseinandergesetzt, wie digitale Technologien unsere Gefühle und Beziehungen
-            verändern. Diese Seite zeigt ihre Perspektiven, Fragen und Erkenntnisse.
-          </p>
-        </div>
-        <div className="grid-panel flex items-center justify-center grid-panel--accent-teal min-h-[250px]">
-          <img src={deepFeelLogo} alt="Deep Feel" className="w-64 md:w-80" />
-        </div>
-        <div className="grid-panel flex items-center justify-center min-h-[250px]">
-          <p className="font-display text-4xl md:text-5xl text-center leading-snug">
-            Fühlen.<br />Fragen.<br />Verstehen.
-          </p>
-        </div>
-      </section>
 
       {/* QUESTIONS */}
       <section id="fragen" className="border-t border-foreground">
