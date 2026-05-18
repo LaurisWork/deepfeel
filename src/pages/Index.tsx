@@ -9,10 +9,9 @@ const Index = () => {
       <nav className="border-b border-foreground px-4 md:px-8 py-4 flex items-center justify-between">
         <img src={deepFeelLogo} alt="Deep Feel Logo" className="h-16 md:h-20" />
         <div className="hidden md:flex gap-3 font-display text-lg">
-          <a href="#fakten" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fakten</a>
           <a href="#workshop" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Workshop</a>
           <a href="#fragen" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fragen</a>
-          
+          <a href="#fakten" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fakten</a>
           <a href="#voting" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Abstimmung</a>
         </div>
       </nav>
