@@ -57,7 +57,7 @@ const SingleVote = ({ q, index }: { q: VotingQuestion; index: number }) => {
   const barBgClass = inverted ? "bg-background/20" : "bg-foreground/10";
   const barFillClass = inverted ? "bg-accent-pink" : "bg-accent-pink";
   const barDefaultClass = inverted ? "bg-background/30" : "bg-foreground/15";
-  const mutedTextClass = inverted ? "text-background/60" : "text-muted-foreground";
+  const mutedTextClass = inverted ? "text-background/60" : "text-foreground";
 
   return (
     <div className={`border border-foreground p-6 md:p-8 ${containerClass}`}>
