@@ -70,7 +70,7 @@
 
 @layer components {
   .grid-panel {
-    @apply border-2 border-foreground p-6 md:p-8 transition-all duration-300;
+    @apply border border-foreground p-6 md:p-8 transition-all duration-300;
   }
 
   .grid-panel:hover {
