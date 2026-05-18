@@ -1,17 +1,6 @@
 import deepFeelLogo from "@/assets/deep-feel-logo.png";
 import VotingPanel from "@/components/VotingPanel";
-
-const AmbientVideo = ({ src, className = "" }: { src: string; className?: string }) => (
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className={`absolute inset-0 w-full h-full object-cover ${className}`}
-  >
-    <source src={src} type="video/mp4" />
-  </video>
-);
+import ScrollVideo from "@/components/ScrollVideo";
 
 const Index = () => {
   return (
