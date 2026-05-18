@@ -1,17 +1,6 @@
 import deepFeelLogo from "@/assets/deep-feel-logo.png";
 import VotingPanel from "@/components/VotingPanel";
-
-const AmbientVideo = ({ src, className = "" }: { src: string; className?: string }) => (
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className={`absolute inset-0 w-full h-full object-cover ${className}`}
-  >
-    <source src={src} type="video/mp4" />
-  </video>
-);
+import ScrollVideo from "@/components/ScrollVideo";
 
 const Index = () => {
   return (
@@ -39,7 +28,7 @@ const Index = () => {
           </p>
         </div>
         <div className="relative overflow-hidden min-h-[300px] md:min-h-[550px] border-l border-foreground">
-          <AmbientVideo src="/videos/klavier.mp4" />
+          <ScrollVideo src="/videos/klavier.mp4" />
         </div>
       </header>
 
@@ -169,7 +158,7 @@ const Index = () => {
           </p>
         </div>
         <div className="md:col-span-2 relative overflow-hidden min-h-[320px] border-l border-foreground">
-          <AmbientVideo src="/videos/anime.mp4" />
+          <ScrollVideo src="/videos/anime.mp4" />
         </div>
       </section>
 
@@ -237,7 +226,7 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
-            <AmbientVideo src="/videos/rewas-freundschaft.mp4" />
+            <ScrollVideo src="/videos/rewas-freundschaft.mp4" />
           </div>
           <div className="grid-panel flex items-center">
             <p className="font-body text-base md:text-lg leading-relaxed">
@@ -260,16 +249,13 @@ const Index = () => {
         <div className="grid-panel pb-4">
           <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
         </div>
-        <div className="border-t border-foreground">
-          <video controls className="w-full block">
-            <source src="/videos/freundschaft.mp4" type="video/mp4" />
-            Dein Browser unterstützt kein Video.
-          </video>
+        <div className="border-t border-foreground relative aspect-video bg-foreground">
+          <ScrollVideo src="/videos/freundschaft.mp4" objectFit="contain" />
+        </div>
           <div className="grid-panel py-4">
             <p className="font-body text-base text-muted-foreground">
               „Freundschaft" — Ein Film aus dem Workshop Deep Feel
             </p>
-          </div>
         </div>
       </section>
 
