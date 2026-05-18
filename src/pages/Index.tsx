@@ -203,7 +203,7 @@ const Index = () => {
               "Hilft Social Media gegen Einsamkeit?",
               "Was bedeutet echte Begegnung?",
             ].map((q) => (
-              <span key={q} className="question-pill text-base md:text-lg">{q}</span>
+              <span key={q} className="question-pill text-lg md:text-xl">{q}</span>
             ))}
           </div>
         </div>
