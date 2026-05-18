@@ -1,5 +1,6 @@
 import deepFeelLogo from "@/assets/deep-feel-logo.png";
 import VotingPanel from "@/components/VotingPanel";
+import StatistikReveal from "@/components/StatistikReveal";
 import ScrollVideo from "@/components/ScrollVideo";
 
 const Index = () => {
