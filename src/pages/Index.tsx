@@ -39,7 +39,7 @@ const Index = () => {
       </div>
 
       {/* MISSION STATEMENT */}
-      <div className="border-b border-foreground px-4 md:px-8 py-10 md:py-14">
+      <div id="workshop" className="border-b border-foreground px-4 md:px-8 py-10 md:py-14 scroll-mt-24">
         <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
           Deep Feel möchte Raum schaffen, um über diese Fragen nachzudenken. 
           Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social 
