@@ -12,7 +12,7 @@ const Index = () => {
           <a href="#fakten" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fakten</a>
           <a href="#workshop" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Workshop</a>
           <a href="#fragen" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Fragen</a>
-          <a href="#video" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Video</a>
+          
           <a href="#voting" className="border border-foreground rounded-full px-5 py-2 hover:bg-foreground hover:text-background transition-colors">Abstimmung</a>
         </div>
       </nav>
@@ -148,18 +148,8 @@ const Index = () => {
       </section>
 
       {/* EXHIBITION VIDEO — Anime */}
-      <section className="grid grid-cols-1 md:grid-cols-3 border-b border-foreground">
-        <div className="grid-panel flex flex-col justify-center min-h-[320px] grid-panel--accent-yellow">
-          <p className="font-display text-3xl md:text-4xl leading-[1.0] mb-3">
-            Bewegtbild #01
-          </p>
-          <p className="font-body text-base md:text-lg leading-relaxed">
-            „Anime" — Eine visuelle Reflexion über digitale Identität und Zugehörigkeit.
-          </p>
-        </div>
-        <div className="md:col-span-2 relative overflow-hidden min-h-[320px] border-l border-foreground">
-          <ScrollVideo src="/videos/anime.mp4" />
-        </div>
+      <section className="border-b border-foreground relative aspect-video bg-foreground">
+        <ScrollVideo src="/videos/anime.mp4" />
       </section>
 
       {/* QUOTE BREAKOUT */}
@@ -244,20 +234,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section id="video" className="border-t border-foreground">
-        <div className="grid-panel pb-4">
-          <h2 className="font-display text-4xl md:text-5xl">Workshop-Video</h2>
-        </div>
-        <div className="border-t border-foreground relative aspect-video bg-foreground">
-          <ScrollVideo src="/videos/freundschaft.mp4" objectFit="contain" />
-        </div>
-          <div className="grid-panel py-4">
-            <p className="font-body text-base text-muted-foreground">
-              „Freundschaft" — Ein Film aus dem Workshop Deep Feel
-            </p>
-        </div>
-      </section>
 
       {/* QUOTE BREAKOUT 2 */}
       <section className="py-12 md:py-20 px-4 md:px-8 border-t border-foreground">
