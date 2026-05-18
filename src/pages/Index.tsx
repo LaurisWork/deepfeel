@@ -274,15 +274,15 @@ const Index = () => {
               <p className="font-display text-5xl md:text-6xl leading-none">182</p>
               <p className="font-body text-base mt-3">abgegebene Stimmen insgesamt</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">37%</p>
               <p className="font-body text-base mt-3">fühlen sich <strong>manchmal</strong> einsam</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">43%</p>
               <p className="font-body text-base mt-3">fühlen sich online <strong>eher nicht</strong> verbunden</p>
             </div>
-            <div className="border border-foreground p-6 bg-background">
+            <div className="p-6 bg-background">
               <p className="font-display text-5xl md:text-6xl leading-none">70%</p>
               <p className="font-body text-base mt-3">glauben, KI kann <strong>keine echte Nähe</strong> erzeugen</p>
             </div>
