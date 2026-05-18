@@ -158,6 +158,21 @@ const Index = () => {
         </div>
       </section>
 
+      {/* EXHIBITION VIDEO — Anime */}
+      <section className="grid grid-cols-1 md:grid-cols-3 border-b border-foreground">
+        <div className="grid-panel flex flex-col justify-center min-h-[320px] grid-panel--accent-yellow">
+          <p className="font-display text-3xl md:text-4xl leading-[1.0] mb-3">
+            Bewegtbild #01
+          </p>
+          <p className="font-body text-base md:text-lg leading-relaxed">
+            „Anime" — Eine visuelle Reflexion über digitale Identität und Zugehörigkeit.
+          </p>
+        </div>
+        <div className="md:col-span-2 relative overflow-hidden min-h-[320px] border-l border-foreground">
+          <AmbientVideo src="/videos/anime.mp4" />
+        </div>
+      </section>
+
       {/* QUOTE BREAKOUT */}
       <section className="py-16 md:py-24 px-4 md:px-8">
         <div className="breakout max-w-5xl mx-auto">
