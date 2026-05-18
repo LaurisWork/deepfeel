@@ -39,7 +39,7 @@ const Index = () => {
       </div>
 
       {/* MISSION STATEMENT */}
-      <div className="border-b border-foreground px-4 md:px-8 py-10 md:py-14">
+      <div id="workshop" className="border-b border-foreground px-4 md:px-8 py-10 md:py-14 scroll-mt-24">
         <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
           Deep Feel möchte Raum schaffen, um über diese Fragen nachzudenken. 
           Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social 
@@ -212,7 +212,7 @@ const Index = () => {
 
 
       {/* WORKSHOP */}
-      <section id="workshop" className="border-t border-foreground">
+      <section className="border-t border-foreground">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
             <ScrollVideo src="/videos/rewas-freundschaft.mp4" />
