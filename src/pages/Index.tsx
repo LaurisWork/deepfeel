@@ -66,6 +66,50 @@ const Index = () => {
         </div>
       </section>
 
+      {/* QUESTIONS */}
+      <section id="fragen" className="border-t border-foreground">
+        <div className="grid-panel pb-4">
+          <h2 className="font-display text-4xl md:text-5xl">Unsere Fragen</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
+          <div className="grid-panel flex items-center justify-center min-h-[280px]">
+            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
+              „Fühlt sich Online-Kontakt genauso an wie{" "}
+              <span className="text-accent-pink">echte Begegnung</span>?"
+            </p>
+          </div>
+          <div className="grid-panel flex items-center justify-center min-h-[280px] border-x border-foreground">
+            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
+              „Können KI oder digitale Räume{" "}
+              <span className="text-accent-teal">Nähe</span> ersetzen?"
+            </p>
+          </div>
+          <div className="grid-panel flex items-center justify-center min-h-[280px]">
+            <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
+              „Warum fühlen sich manche Menschen trotz vieler Kontakte{" "}
+              <span className="text-accent-blue">einsam</span>?"
+            </p>
+          </div>
+        </div>
+        {/* Pills */}
+        <div className="border-t border-foreground px-4 md:px-8 py-12 md:py-16">
+          <div className="flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
+            {[
+              "Wie fühlt sich Einsamkeit an?",
+              "Kann Technologie Nähe schaffen?",
+              "Was macht uns wirklich verbunden?",
+              "Ist KI ein Freund?",
+              "Wann fühlst du dich gesehen?",
+              "Was fehlt im digitalen Raum?",
+              "Hilft Social Media gegen Einsamkeit?",
+              "Was bedeutet echte Begegnung?",
+            ].map((q) => (
+              <span key={q} className="question-pill text-lg md:text-xl">{q}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== FAKTEN ===== */}
       <section id="fakten" className="border-b border-foreground">
         {/* Fact 1 */}
