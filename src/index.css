@@ -98,11 +98,7 @@
   }
 
   .question-pill {
-    @apply inline-block border border-foreground/40 rounded-full px-5 py-2 font-display text-sm md:text-base transition-colors duration-200;
-  }
-
-  .question-pill:hover {
-    @apply bg-foreground text-background;
+    @apply inline-block border border-foreground/40 rounded-full px-6 py-3 font-display text-lg md:text-xl;
   }
 
   .breakout {
