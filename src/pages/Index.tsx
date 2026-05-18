@@ -297,7 +297,7 @@ const Index = () => {
 
 
       {/* FOOTER — inverted */}
-      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 mt-12 md:mt-20 border-t-[12px] border-foreground shadow-[0_-1px_0_0_hsl(var(--foreground))]">
+      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
