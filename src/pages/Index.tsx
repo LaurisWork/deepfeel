@@ -170,15 +170,19 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Fact 5 — full width, light accent background */}
-        <div className="grid-panel min-h-[280px] flex flex-col justify-center bg-accent-yellow/10">
-          <p className="font-display text-4xl md:text-6xl lg:text-7xl leading-[0.92] max-w-4xl mb-6">
-            Einsamkeit beeinflusst auch unsere Gesellschaft.
-          </p>
-          <p className="font-body text-lg md:text-xl leading-relaxed max-w-2xl">
-            Sie kann Vertrauen schwächen und sich negativ auf Demokratie auswirken. 
-            Wer sich nicht zugehörig fühlt, zieht sich zurück – auch politisch.
-          </p>
+        {/* Fact 5 — split into two panels */}
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid-panel min-h-[280px] flex flex-col justify-center bg-accent-yellow/10">
+            <p className="font-display text-4xl md:text-6xl lg:text-7xl leading-[0.92]">
+              Einsamkeit beeinflusst auch unsere Gesellschaft.
+            </p>
+          </div>
+          <div className="grid-panel min-h-[280px] flex items-center border-l border-foreground bg-accent-yellow/10">
+            <p className="font-body text-lg md:text-xl leading-relaxed max-w-xl">
+              Sie kann Vertrauen schwächen und sich negativ auf Demokratie auswirken.
+              Wer sich nicht zugehörig fühlt, zieht sich zurück – auch politisch.
+            </p>
+          </div>
         </div>
       </section>
 
