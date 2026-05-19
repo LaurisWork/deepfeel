@@ -286,6 +286,9 @@ const Index = () => {
             <p className="font-body text-base opacity-70 leading-relaxed">
               Bei Fragen zum Projekt oder den Ergebnissen freuen wir uns über eine Nachricht.
             </p>
+            <a href="mailto:hi.ideenkiosk@gmail.com" className="font-body text-base mt-2 inline-block underline underline-offset-4 hover:opacity-70">
+              hi.ideenkiosk@gmail.com
+            </a>
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-background/20 flex flex-col md:flex-row items-center justify-between gap-4">
