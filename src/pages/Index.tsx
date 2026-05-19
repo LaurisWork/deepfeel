@@ -70,17 +70,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* INTRO */}
-      <section className="grid grid-cols-1 md:grid-cols-4 border-t border-foreground">
-        <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[250px]">
-          <p className="font-body text-lg md:text-xl leading-relaxed max-w-lg">
-            Im Rahmen des Workshops „Deep Feel" haben sich junge Menschen mit der Frage
-            auseinandergesetzt, wie digitale Technologien unsere Gefühle und Beziehungen
-            verändern. Diese Seite zeigt ihre Perspektiven, Fragen und Erkenntnisse.
+      {/* INTRO TEXT — full width */}
+      <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
+        <div className="max-w-6xl">
+          <p className="font-display text-2xl md:text-3xl lg:text-4xl leading-snug mb-6">
+            Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social Media,
+            KI und digitale Kommunikation in ihrem Leben spielen.
+          </p>
+          <p className="font-display text-2xl md:text-3xl lg:text-4xl leading-snug">
+            Neben ihren Perspektiven, Fragen und Erkenntnissen, bietet diese Seite
+            Fakten und eine Umfrage zu dem Thema.
           </p>
         </div>
+      </section>
+
+      {/* INTRO PANELS */}
+      <section className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
         <div className="grid-panel flex items-center justify-center grid-panel--accent-teal min-h-[250px]">
           <img src={deepFeelLogo} alt="Deep Feel" className="w-64 md:w-80" />
+        </div>
+        <div className="grid-panel flex items-center justify-center min-h-[250px] border-x border-foreground">
+          <p className="font-display text-4xl md:text-5xl text-center leading-snug">
+            Ein paar<br />Fakten.
+          </p>
         </div>
         <div className="grid-panel flex items-center justify-center min-h-[250px]">
           <p className="font-display text-4xl md:text-5xl text-center leading-snug">
