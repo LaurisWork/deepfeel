@@ -39,12 +39,12 @@ const Index = () => {
       </div>
 
       {/* MISSION STATEMENT */}
-      <div id="workshop" className="border-b border-foreground px-4 md:px-8 py-10 md:py-14 scroll-mt-24">
-        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
+      <div id="workshop" className="border-b border-foreground px-4 md:px-8 py-10 md:py-14 scroll-mt-24 text-center">
+        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mx-auto">
           Wie verändern digitale Technologien unsere Gefühle und Beziehungen?
         </p>
-        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mt-6">
-          „Deep Feel" schafft Raum, um sich mit dieser Frage auseinanderzusetzen.
+        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mx-auto mt-6">
+          Deep Feel schafft Raum, um sich mit dieser Frage auseinanderzusetzen.
         </p>
       </div>
 
@@ -72,7 +72,7 @@ const Index = () => {
 
       {/* INTRO TEXT — full width */}
       <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
-        <div className="max-w-6xl">
+        <div className="max-w-6xl mx-auto text-center">
           <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-6">
             Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social Media,
             KI und digitale Kommunikation in ihrem Leben spielen.
@@ -254,13 +254,13 @@ const Index = () => {
       <StatistikReveal />
 
       {/* CLOSING — outro before footer */}
-      <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
-        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mb-10">
+      <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20 text-center">
+        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mx-auto mb-10">
           Deep Feel ist ein Workshop-Projekt, das junge Menschen einlädt,
           sich mit den Auswirkungen digitaler Technologien auf ihre Gefühle
           zu beschäftigen.
         </p>
-        <p className="font-body text-lg md:text-xl leading-relaxed max-w-3xl">
+        <p className="font-body text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
           Ideen, Anmerkungen oder Lust auf Austausch?{" "}
           <a href="mailto:hi.ideenkiosk@gmail.com" className="underline underline-offset-4 hover:opacity-70">
             hi.ideenkiosk@gmail.com
