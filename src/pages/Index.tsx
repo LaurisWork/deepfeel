@@ -196,9 +196,8 @@ const Index = () => {
           </div>
           <div className="grid-panel flex items-center">
             <p className="font-body text-base md:text-lg leading-relaxed">
-              In der ersten Session ging es um die Frage: Was bedeutet emotionale Nähe
-              in einer digitalisierten Welt? Die Teilnehmer*innen sammelten persönliche
-              Erfahrungen und diskutierten in Kleingruppen.
+              Was hilft dir wenn du dich einsam fühlst? Die Teilnehmer*innen
+              sammelten persönliche Erfahrungen und diskutierten in Kleingruppen.
             </p>
           </div>
           <div className="grid-panel flex items-center">
