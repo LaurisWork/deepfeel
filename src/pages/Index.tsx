@@ -250,6 +250,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* STATISTIK */}
+      <StatistikReveal />
+
       {/* CLOSING — outro before footer */}
       <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
         <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mb-10">
@@ -265,8 +268,6 @@ const Index = () => {
         </p>
       </section>
 
-      {/* STATISTIK */}
-      <StatistikReveal />
 
 
 
