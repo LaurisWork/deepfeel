@@ -180,15 +180,6 @@ const Index = () => {
             Wer sich nicht zugehörig fühlt, zieht sich zurück – auch politisch.
           </p>
         </div>
-
-        {/* Closing text panel */}
-        <div className="grid-panel min-h-[280px] flex items-center border-t border-foreground">
-          <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
-            Deep Feel ist ein Workshop-Projekt, das junge Menschen einlädt,
-            sich mit den Auswirkungen digitaler Technologien auf ihre Gefühle
-            zu beschäftigen.
-          </p>
-        </div>
       </section>
 
       {/* EXHIBITION VIDEO — Anime */}
