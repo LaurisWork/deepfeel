@@ -73,11 +73,11 @@ const Index = () => {
       {/* INTRO TEXT — full width */}
       <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
         <div className="max-w-6xl">
-          <p className="font-display text-2xl md:text-3xl lg:text-4xl leading-snug mb-6">
+          <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-6">
             Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social Media,
             KI und digitale Kommunikation in ihrem Leben spielen.
           </p>
-          <p className="font-display text-2xl md:text-3xl lg:text-4xl leading-snug">
+          <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05]">
             Neben ihren Perspektiven, Fragen und Erkenntnissen, bietet diese Seite
             Fakten und eine Umfrage zu dem Thema.
           </p>
@@ -183,7 +183,7 @@ const Index = () => {
 
         {/* Closing text panel */}
         <div className="grid-panel min-h-[280px] flex items-center border-t border-foreground">
-          <p className="font-display text-2xl md:text-3xl lg:text-4xl leading-snug max-w-6xl">
+          <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl">
             Deep Feel ist ein Workshop-Projekt, das junge Menschen einlädt,
             sich mit den Auswirkungen digitaler Technologien auf ihre Gefühle
             zu beschäftigen.
