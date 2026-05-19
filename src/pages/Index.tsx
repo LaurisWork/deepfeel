@@ -72,7 +72,7 @@ const Index = () => {
 
       {/* INTRO TEXT — full width */}
       <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20">
-        <div className="max-w-6xl">
+        <div className="max-w-6xl mx-auto text-center">
           <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-6">
             Gemeinsam mit Jugendlichen haben wir untersucht, welche Rolle Social Media,
             KI und digitale Kommunikation in ihrem Leben spielen.
