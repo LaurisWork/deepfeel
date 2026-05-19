@@ -129,7 +129,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 border-b border-foreground">
           <div className="grid-panel flex items-center justify-center min-h-[280px]">
             <p className="font-display text-7xl md:text-9xl">
-              <span className="text-accent-pink">18</span>–<span className="text-accent-pink">29</span>
+              <span className="text-accent-pink">18–29</span>
             </p>
           </div>
           <div className="grid-panel md:col-span-2 flex flex-col justify-center min-h-[280px]">
