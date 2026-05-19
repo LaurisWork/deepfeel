@@ -50,9 +50,6 @@ const Index = () => {
 
       {/* QUESTIONS */}
       <section id="fragen" className="border-t border-foreground">
-        <div className="grid-panel pb-4">
-          <h2 className="font-display text-4xl md:text-5xl">Unsere Fragen</h2>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-foreground">
           <div className="grid-panel flex items-center justify-center min-h-[280px]">
             <p className="font-display text-2xl md:text-3xl text-center leading-snug px-4">
