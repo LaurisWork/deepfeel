@@ -109,10 +109,13 @@ const Index = () => {
             <p className="font-display text-5xl md:text-7xl leading-[0.92] mb-4">
               Jede 6. Person fühlt sich einsam.
             </p>
+            <p className="font-body text-sm text-foreground mt-4">
+              — Sozialbericht 2024, bpb
+            </p>
           </div>
           <div className="grid-panel flex items-center min-h-[300px]">
             <p className="font-body text-xl md:text-2xl leading-relaxed">
-              Und junge Menschen sind besonders betroffen. Einsamkeit betrifft nicht nur ältere 
+              Und junge Menschen sind besonders betroffen. Einsamkeit betrifft nicht nur ältere
               Generationen – sie ist mitten unter uns.
             </p>
           </div>
@@ -130,8 +133,11 @@ const Index = () => {
               18–29-Jährige sind am häufigsten einsam.
             </p>
             <p className="font-body text-lg md:text-xl leading-relaxed max-w-xl">
-              Fast jede vierte Person in diesem Alter fühlt sich oft einsam. 
+              Fast jede vierte Person (24 %) in diesem Alter fühlt sich oft einsam.
               Die Generation, die am meisten vernetzt ist, fühlt sich am einsamsten.
+            </p>
+            <p className="font-body text-sm text-foreground mt-4">
+              — Einsamkeitsbarometer 2024, BMFSFJ
             </p>
           </div>
         </div>
@@ -146,8 +152,11 @@ const Index = () => {
               Junge Frauen sind stärker betroffen als Männer.
             </p>
             <p className="font-body text-lg md:text-xl leading-relaxed max-w-2xl">
-              Mehr als jede vierte junge Frau fühlt sich oft einsam. 
+              Mehr als jede vierte junge Frau (26 %) fühlt sich oft einsam.
               Geschlecht spielt eine Rolle – auch bei der Frage, wer über Einsamkeit sprechen darf.
+            </p>
+            <p className="font-body text-sm text-foreground mt-4">
+              — Einsamkeitsbarometer 2024, BMFSFJ
             </p>
           </div>
         </div>
@@ -162,10 +171,14 @@ const Index = () => {
               </span>
             </p>
           </div>
-          <div className="grid-panel flex items-center min-h-[300px]">
+          <div className="grid-panel flex flex-col justify-center min-h-[300px]">
             <p className="font-body text-lg md:text-xl leading-relaxed">
-              Einsamkeit hängt unter anderem mit Depressionen, Angststörungen und 
-              Schlafproblemen zusammen. Sie ist ein Gesundheitsrisiko, das oft unterschätzt wird.
+              Einsamkeit hängt mit Herz-Kreislauf-Erkrankungen, Bluthochdruck, Demenz,
+              Depressionen, Angstzuständen und Schlafstörungen zusammen. Sie ist ein
+              Gesundheitsrisiko, das oft unterschätzt wird.
+            </p>
+            <p className="font-body text-sm text-foreground mt-4">
+              — Deutsche Hirnstiftung; Malteser
             </p>
           </div>
         </div>
@@ -177,10 +190,13 @@ const Index = () => {
               Einsamkeit beeinflusst auch unsere Gesellschaft.
             </p>
           </div>
-          <div className="grid-panel min-h-[280px] flex items-center border-l border-foreground bg-accent-yellow/10">
+          <div className="grid-panel min-h-[280px] flex flex-col justify-center border-l border-foreground bg-accent-yellow/10">
             <p className="font-body text-lg md:text-xl leading-relaxed max-w-xl">
               Sie kann Vertrauen schwächen und sich negativ auf Demokratie auswirken.
               Wer sich nicht zugehörig fühlt, zieht sich zurück – auch politisch.
+            </p>
+            <p className="font-body text-sm text-foreground mt-4">
+              — Einsamkeitsbarometer 2024, BMFSFJ
             </p>
           </div>
         </div>
