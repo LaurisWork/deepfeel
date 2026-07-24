@@ -315,7 +315,6 @@ const Index = () => {
             </p>
           </div>
           <div>
-            <p className="font-display text-base mb-4">Kontakt</p>
             <div className="grid grid-cols-3 gap-4 items-center">
               <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
               <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
