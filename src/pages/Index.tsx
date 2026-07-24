@@ -1,4 +1,9 @@
 import deepFeelLogo from "@/assets/deep-feel-logo.png";
+import logoKomplett from "@/assets/logo-komplett.svg.asset.json";
+import logoJuze from "@/assets/logo-juze.png.asset.json";
+import logoJungeStadt from "@/assets/logo-jungestadt.png.asset.json";
+import logoStadtKoeln from "@/assets/logo-stadt-koeln.png.asset.json";
+import logoSparkasse from "@/assets/logo-sparkasse.png.asset.json";
 import VotingPanel from "@/components/VotingPanel";
 import StatistikReveal from "@/components/StatistikReveal";
 import ScrollVideo from "@/components/ScrollVideo";
@@ -310,13 +315,16 @@ const Index = () => {
             </p>
           </div>
           <div>
-            <p className="font-display text-base mb-3">Kontakt</p>
-            <p className="font-body text-base opacity-70 leading-relaxed">
-              Bei Fragen zum Projekt oder den Ergebnissen freuen wir uns über eine Nachricht.
-            </p>
-            <a href="mailto:hi.ideenkiosk@gmail.com" className="font-body text-base mt-2 inline-block underline underline-offset-4 hover:opacity-70">
-              hi.ideenkiosk@gmail.com
-            </a>
+            <p className="font-display text-base mb-4">Kontakt</p>
+            <div className="grid grid-cols-3 gap-4 items-center bg-background p-4 rounded">
+              <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto" />
+            </div>
+            <div className="grid grid-cols-2 gap-4 items-center bg-background p-4 rounded mt-3">
+              <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto" />
+            </div>
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-background/20 flex flex-col md:flex-row items-center justify-between gap-4">
