@@ -313,6 +313,12 @@ const Index = () => {
               Deep Feel ist ein einmaliges Workshop-Projekt, das junge Menschen einlädt,
               über die Auswirkungen digitaler Technologien auf ihre Gefühle nachzudenken.
             </p>
+            <p className="font-body text-base leading-relaxed mt-4">
+              Zur Förderung: Deep Feel ist entstanden im Projekt „Rollen Gestalten" von
+              ROOTS & ROUTES Cologne e. V. in Kooperation mit dem Kinder- und
+              Jugendzentrum Meschenich und der Jungen Stadt Köln. Das Projekt wurde
+              gefördert von der Stadt Köln und der Sparkasse KölnBonn.
+            </p>
           </div>
           <div>
             <div className="grid grid-cols-3 gap-4 items-center">
