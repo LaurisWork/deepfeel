@@ -8,7 +8,7 @@ const StatistikReveal = () => {
       <div className="grid-panel border-0">
         <p className="font-body uppercase tracking-widest text-sm mb-2">Zwischenstand</p>
         <h2 className="font-display text-4xl md:text-5xl mb-10">
-          So haben bisher andere abgestimmt
+          So haben andere abgestimmt
         </h2>
 
         {!revealed ? (
