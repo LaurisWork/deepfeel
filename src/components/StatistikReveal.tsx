@@ -43,9 +43,6 @@ const StatistikReveal = () => {
                 <p className="font-body text-base mt-3">glauben, KI kann <strong>keine echte Nähe</strong> erzeugen</p>
               </div>
             </div>
-            <p className="font-body text-sm mt-8 opacity-70">
-              Stand: Live-Auswertung aller bisher abgegebenen Stimmen.
-            </p>
           </>
         )}
       </div>

@@ -280,16 +280,10 @@ const Index = () => {
 
       {/* CLOSING — outro before footer */}
       <section className="border-t border-foreground px-4 md:px-8 py-12 md:py-20 text-center">
-        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mx-auto mb-10">
+        <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] max-w-6xl mx-auto">
           Deep Feel ist ein Workshop-Projekt, das junge Menschen einlädt,
           sich mit den Auswirkungen digitaler Technologien auf ihre Gefühle
           zu beschäftigen.
-        </p>
-        <p className="font-body text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-          Ideen, Anmerkungen oder Lust auf Austausch?{" "}
-          <a href="mailto:hi.ideenkiosk@gmail.com" className="underline underline-offset-4 hover:opacity-70">
-            hi.ideenkiosk@gmail.com
-          </a>
         </p>
       </section>
 
@@ -300,9 +294,9 @@ const Index = () => {
       {/* FOOTER — white with black text */}
       <footer className="bg-background text-foreground px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4 brightness-0" />
+            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4" />
             <p className="font-body text-base">
               Ein Workshop-Projekt über Gefühle,<br />Technologie und menschliche Verbindung.
             </p>
@@ -313,8 +307,11 @@ const Index = () => {
               Deep Feel ist ein einmaliges Workshop-Projekt, das junge Menschen einlädt,
               über die Auswirkungen digitaler Technologien auf ihre Gefühle nachzudenken.
             </p>
-            <p className="font-body text-base leading-relaxed mt-4">
-              Zur Förderung: Deep Feel ist entstanden im Projekt „Rollen Gestalten" von
+          </div>
+          <div>
+            <p className="font-display text-base mb-3">Zur Förderung</p>
+            <p className="font-body text-base leading-relaxed">
+              Deep Feel ist entstanden im Projekt „Rollen Gestalten" von
               ROOTS & ROUTES Cologne e. V. in Kooperation mit dem Kinder- und
               Jugendzentrum Meschenich und der Jungen Stadt Köln. Das Projekt wurde
               gefördert von der Stadt Köln und der Sparkasse KölnBonn.
@@ -322,13 +319,13 @@ const Index = () => {
           </div>
           <div>
             <div className="grid grid-cols-3 gap-4 items-center">
-              <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
-              <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
-              <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
+              <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto" />
             </div>
             <div className="grid grid-cols-2 gap-4 items-center mt-3">
-              <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
-              <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
+              <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto" />
             </div>
           </div>
         </div>
