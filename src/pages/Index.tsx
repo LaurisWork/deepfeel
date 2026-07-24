@@ -33,7 +33,7 @@ const Index = () => {
           </p>
         </div>
         <div className="relative overflow-hidden min-h-[300px] md:min-h-[550px] border-l border-foreground">
-          <ScrollVideo src="/videos/klavier.mp4" />
+          <ScrollVideo src="/deepfeel/videos/klavier.mp4" />
         </div>
       </header>
 
@@ -209,7 +209,7 @@ const Index = () => {
 
       {/* EXHIBITION VIDEO — Anime */}
       <section className="border-b border-foreground relative aspect-video bg-foreground">
-        <ScrollVideo src="/videos/anime.mp4" />
+        <ScrollVideo src="/deepfeel/videos/anime.mp4" />
       </section>
 
       {/* QUOTE BREAKOUT */}
@@ -230,7 +230,7 @@ const Index = () => {
       <section className="border-t border-foreground">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="grid-panel md:col-span-2 md:row-span-2 p-0 relative overflow-hidden min-h-[400px]">
-            <ScrollVideo src="/videos/rewas-freundschaft.mp4" />
+            <ScrollVideo src="/deepfeel/videos/rewas-freundschaft.mp4" />
           </div>
           <div className="grid-panel flex items-center">
             <p className="font-body text-base md:text-lg leading-relaxed">
