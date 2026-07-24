@@ -297,19 +297,19 @@ const Index = () => {
 
 
 
-      {/* FOOTER — inverted */}
-      <footer className="bg-foreground text-background px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
+      {/* FOOTER — white with black text */}
+      <footer className="bg-background text-foreground px-4 md:px-8 py-12 md:py-16 border-t border-foreground">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4 invert" />
-            <p className="font-body text-base opacity-70">
+            <img src={deepFeelLogo} alt="Deep Feel" className="h-24 mb-4 brightness-0" />
+            <p className="font-body text-base">
               Ein Workshop-Projekt über Gefühle,<br />Technologie und menschliche Verbindung.
             </p>
           </div>
           <div>
             <p className="font-display text-base mb-3">Projekt</p>
-            <p className="font-body text-base opacity-70 leading-relaxed">
+            <p className="font-body text-base leading-relaxed">
               Deep Feel ist ein einmaliges Workshop-Projekt, das junge Menschen einlädt,
               über die Auswirkungen digitaler Technologien auf ihre Gefühle nachzudenken.
             </p>
@@ -317,19 +317,19 @@ const Index = () => {
           <div>
             <p className="font-display text-base mb-4">Kontakt</p>
             <div className="grid grid-cols-3 gap-4 items-center">
-              <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto" />
-              <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto" />
-              <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
+              <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
+              <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
             </div>
             <div className="grid grid-cols-2 gap-4 items-center mt-3">
-              <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto" />
-              <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto" />
+              <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
+              <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto brightness-0" />
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-background/20 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-body opacity-50">© 2026 Deep Feel. Alle Rechte vorbehalten.</p>
-          <p className="font-body opacity-50">Eine digitale Ausstellung</p>
+        <div className="mt-12 pt-6 border-t border-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-body">© 2026 Deep Feel. Alle Rechte vorbehalten.</p>
+          <p className="font-body">Eine digitale Ausstellung</p>
         </div>
       </footer>
     </div>
