@@ -316,12 +316,12 @@ const Index = () => {
           </div>
           <div>
             <p className="font-display text-base mb-4">Kontakt</p>
-            <div className="grid grid-cols-3 gap-4 items-center bg-background p-4 rounded">
+            <div className="grid grid-cols-3 gap-4 items-center">
               <img src={logoKomplett.url} alt="Logo" className="max-h-16 w-auto object-contain mx-auto" />
               <img src={logoJuze.url} alt="Kinder- und Jugendzentrum Meschenich" className="max-h-16 w-auto object-contain mx-auto" />
               <img src={logoJungeStadt.url} alt="Junge Stadt" className="max-h-16 w-auto object-contain mx-auto" />
             </div>
-            <div className="grid grid-cols-2 gap-4 items-center bg-background p-4 rounded mt-3">
+            <div className="grid grid-cols-2 gap-4 items-center mt-3">
               <img src={logoStadtKoeln.url} alt="Stadt Köln" className="max-h-16 w-auto object-contain mx-auto" />
               <img src={logoSparkasse.url} alt="Sparkasse KölnBonn" className="max-h-16 w-auto object-contain mx-auto" />
             </div>
